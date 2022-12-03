@@ -1,0 +1,66 @@
+html {
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+
+}
+
+.header__top {
+
+    background-color: rgba(5, 57, 112, 0.572);
+    padding-top: 3rem;
+}
+
+.header__photo {
+
+    width: 15rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.header__title {
+
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 4rem;
+}
+
+.header__subtitle {
+
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 0.3rem;
+}
+.header__network {
+
+    width: 3rem;
+    align-content: center;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 0.8rem;
+}
+
+.header__network:hover {
+
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+.main__subtitle {
+
+    text-align: center;
+}
+
+h2 { 
+    margin-bottom: 2rem;
+}
