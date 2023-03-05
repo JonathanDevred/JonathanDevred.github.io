@@ -1,66 +1,105 @@
-html {
-
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
-
-}
-
-.header__top {
-
-    background-color: rgba(5, 57, 112, 0.572);
-    padding-top: 3rem;
-}
-
-.header__photo {
-
-    width: 15rem;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    
-}
-
-.header__title {
-
+:root {
+    background-color: #212652;
     color: white;
+    font-family: Telegraf, sans-serif;
+
+}
+
+header {
+    float: left;
+    width: 25%;
+    background-color: #212652;
+    height: 100%;
+}
+
+.header__title{
+    font-size: 2rem;
     text-align: center;
-    text-decoration: underline;
-    font-size: 4rem;
-}
-
-.header__subtitle {
-
-    color: white;
-    text-align: center;
-    font-size: 1.2rem;
-    padding-top: 0.3rem;
-}
-.header__network {
-
-    width: 3rem;
-    align-content: center;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    padding: 0.8rem;
-}
-
-.header__network:hover {
-
-    background-color: rgb(255, 255, 255);
-    max-width: 100%;
+    margin-top: 4rem;
 }
 
 .photo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5rem;
+    width:25%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
-.main__subtitle {
+  
+main {
+    float: right;
+    width: 75%;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    height: 100%;
+}
 
+.title-container {
     text-align: center;
+    margin: 4rem 0 5rem 0;
+
 }
 
-h2 { 
-    margin-bottom: 2rem;
+.title {
+    font-size: 3rem;
+    font-weight: 700;
 }
+
+.subtitle {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+.svg {
+width: 64px;
+align-content: center;
+margin-bottom: 1rem;
+}
+
+span { 
+    padding-top: 2rem;
+}
+
+.svg-contact {
+    width: 64px;
+    align-content: center;
+    margin: 2rem 1rem 2rem 1rem;
+    padding-bottom: 1rem;
+    }
+
+    .navigation-container{
+        background-color: rgba(33, 38, 82, 0.6);
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .navigation-title{
+        font-size: 2rem;
+        text-align: center;
+        padding: 2rem 0 3rem 0 ;
+    }
+
+
+    .links-container {
+        margin-top: 0;
+        text-align: center; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .link {
+        display: inline-block;
+        width: 25%;
+        margin: 30px;
+        text-align: center; 
+      }
+      .link span {
+        display: block;
+        padding-top: 2rem;
+      }
+      .link img {
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+        max-width: 64px;
+      }
