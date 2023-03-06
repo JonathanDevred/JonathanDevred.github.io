@@ -20,7 +20,7 @@ const HomePage = () => {
 
     <div className="title-container">
         <h1 className="title">JONATHAN DEVRED</h1>
-        <h3 className="main-subtitle">WEB DÉVELOPPEUR</h3>
+        <h3 className="subtitle">WEB DÉVELOPPEUR</h3>
     </div>
 
     <div className="navigation-container">
@@ -38,7 +38,7 @@ const HomePage = () => {
             </div>
 
             <div className="link" >
-            <Link className="link-navigation" to="/projets">
+            <Link className="link-navigation" to="/projects">
                 <img className="svg" src="./images/1.svg" alt="Projets" />
                 <span>MES PROJETS</span>
             </Link>

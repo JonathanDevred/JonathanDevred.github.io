@@ -1,4 +1,6 @@
 import { memo } from "react";
+import Header from "../../components/Header/Header";
+
 
 const ProjectsPage = () => {
 
@@ -6,7 +8,9 @@ const ProjectsPage = () => {
     return (
 
        <>
-       <h1>MES PROJETS</h1>
+       <div className="header-regular">
+       <Header title="MES PROJETS" />
+       </div>
        </>
 
     )

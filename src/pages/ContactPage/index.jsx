@@ -7,7 +7,7 @@ const ContactPage = () => {
     return (
        <section className="page contact-page">
 
-        <div className="header">  
+        <div className="header-regular">  
             <Header  title="ME CONTACTER"/>
         </div>
         <p> Si vous souhaitez me contacter pour discuter d'un projet de développement web, 

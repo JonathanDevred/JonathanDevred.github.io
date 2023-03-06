@@ -7,11 +7,16 @@ const AboutPage = () => {
 
     return (
 
-       <>
+       <section>
+        <div className="header-regular">
         <Header title="A PROPOS DE MOI"/>
+        </div>
 
-            <main>
-                <h2 className="subtitle">Qui suis-je ?</h2>
+            <div className="about">
+            <main className="about-main">
+
+                <section className="about-section">
+                <h2 className="about-subtitle">Qui suis-je ?</h2>
                 
                 <p className="about-text">
                 Mon nom est Jonathan Devred, un développeur web de 29 ans. Après près de 10 ans d'expérience dans le commerce et la logistique, j'ai décidé de me reconvertir dans le développement web.
@@ -23,8 +28,10 @@ const AboutPage = () => {
                 <p className="about-text">
                 Bien que je sois un développeur junior, j'ai une soif d'apprendre et de participer à des projets passionnants pour
                 améliorer mes compétences et contribuer au succès de l'équipe.</p>
+                </section>
 
-                <h2 className="subtitle">Pourquoi le dévéloppement web ?</h2>
+                <section className="about-section">
+                <h2 className="about-subtitle">Pourquoi le dévéloppement web ?</h2>
                 
                 <p className="about-text">
                     J'ai grandi à la naissance d'Internet, et j'ai toujours été fasciné par cette technologie qui offre des possibilités infinies.
@@ -40,8 +47,10 @@ const AboutPage = () => {
                     les compétences nécessaires pour travailler en tant que développeur web. Je suis heureux de pouvoir exprimer ma créativité et ma passion pour l'informatique à travers le développement web,
                     et j'ai hâte de continuer à apprendre et à évoluer dans ce domaine passionnant.
                 </p>
+                </section>
 
-                <h2 className="subtitle"> Quelle stack technique ?</h2>
+                <section className="about-section">
+                <h2 className="about-subtitle"> Quelle stack technique ?</h2>
 
                 <p className="about-text"> 
                 En tant que développeur, j'utilise une gamme complète d'outils et de technologies pour créer des applications web performantes
@@ -67,8 +76,10 @@ const AboutPage = () => {
                 Mon engagement envers l'excellence et la qualité se reflète également dans l'utilisation d'outils utiles tels que Insomnia,
                 qui facilite le processus de test d'API.
                 </p>
+                </section>
 
-                <h2 className="subtitle">Et pour la suite ?</h2>
+                <section className="about-section">
+                <h2 className="about-subtitle">Et pour la suite ?</h2>
 
                 <p className="about-text">
                 Pour l'avenir, mon objectif est de travailler sur une variété de projets différents afin d'élargir mes connaissances
@@ -81,9 +92,11 @@ const AboutPage = () => {
                 pour mes clients. Travailler sur une variété de projets me permettra d'acquérir une expérience pratique et de devenir 
                 un développeur plus compétent, capable de relever tous les défis de développement web qui se présentent.
                 </p>
+                </section>
 
             </main>
-        </>
+            </div>
+        </section>
 
     )
 }

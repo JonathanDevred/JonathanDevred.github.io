@@ -1,13 +1,17 @@
 import { memo } from "react";
+import Header from "../../components/Header/Header";
+import "./styles.scss"
 
 const ServicesPage = () => {
 
 
     return (
 
-       <>
-       <h1>MES SERVICES</h1>
-       </>
+        <>
+        <div className="header-regular">
+        <Header title="MES SERVICES" />
+        </div>
+        </>
 
     )
 }
