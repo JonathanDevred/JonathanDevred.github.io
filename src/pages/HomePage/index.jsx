@@ -36,7 +36,7 @@ const HomePage = () => {
 
        
             <div className="link" >
-            <Link className="test" to="/about">
+            <Link className="link-navigation" to="/about">
                 <img className="svg" src="./images/3.svg" alt="A propose" />
                 <span>À PROPOS</span>
             </Link>
@@ -58,13 +58,17 @@ const HomePage = () => {
             </div>
 
             <div className="link" >
+            <Link className="link-navigation" to="https://linktr.ee/jdvrd" target="_blank" rel="noopener noreferrer">
                 <img className="svg" src="./images/6.svg" alt="réseaux sociaux" />
                 <span>MES RÉSEAUX</span>
+            </Link>
             </div>
 
             <div className="link" >
+            <Link className="link-navigation" to="/contact">
                 <img className="svg-contact" src="./images/2.svg" alt="Contact" />
                 <span>ME CONTACTER</span>
+            </Link>
             </div>
         </div>
     </div>
