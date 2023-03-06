@@ -1,15 +1,8 @@
-:root {
-    background-color: #212652;
-    color: white;
-    font-family: Telegraf, sans-serif;
-
-}
-
 header {
     float: left;
     width: 25%;
     background-color: #212652;
-    height: 100%;
+    height: 100vh;
 }
 
 .header__title{
@@ -30,7 +23,7 @@ main {
     width: 75%;
     background-image: url("../images/background.png");
     background-size: cover;
-    height: 100%;
+    height: 100vh;
 }
 
 .title-container {
@@ -41,7 +34,7 @@ main {
 
 .title {
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .subtitle {
@@ -102,4 +95,10 @@ span {
         margin: 0 auto;
         width: 60%;
         max-width: 64px;
+      }
+
+      .test {
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
       }
