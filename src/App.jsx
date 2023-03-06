@@ -4,10 +4,14 @@ BrowserRouter as Router,
 Route,
 Routes
 } from "react-router-dom";
+
 import AboutPage from './pages/AboutPage';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import ErrorPage from './pages/ErrorPage';
+import ProjectsPage from './pages/ProjectsPage';
+import ResumePage from './pages/ResumePage';
+import ServicesPage from './pages/ServicesPage';
 
 function App() {
 
@@ -17,7 +21,10 @@ return (
     <Route exact path="/" element={<HomePage />} />
     <Route exact path="/about" element={<AboutPage />} />
     <Route exact path="/contact" element={<ContactPage />} />
-    <Route exact path="*" element={<ErrorPage />} />
+    <Route exact path="/projects" element={<ProjectsPage />} />
+    <Route exact path="/cv" element={<ResumePage />} />
+    <Route exact path="/services" element={<ServicesPage />} />
+    <Route  path="*" element={<ErrorPage />} />
   </Routes>
 </Router>
 )

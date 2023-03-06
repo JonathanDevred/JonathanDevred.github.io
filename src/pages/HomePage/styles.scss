@@ -1,4 +1,10 @@
-header {
+.homepage {
+    background-color: #212652;
+    color: white;
+    font-family: Telegraf, sans-serif;
+}
+
+.header-homepage {
     float: left;
     width: 25%;
     background-color: #212652;
@@ -18,7 +24,7 @@ header {
     left: 0;
 }
   
-main {
+.main-homepage {
     float: right;
     width: 75%;
     background-image: url("../images/background.png");
@@ -37,10 +43,12 @@ main {
     font-weight: bold;
 }
 
-.subtitle {
+.main-subtitle {
     margin-top: 2rem;
     font-size: 1.5rem;
 }
+
+
 .svg {
 width: 64px;
 align-content: center;

@@ -1,6 +1,5 @@
 import { memo } from "react";
 import { Link } from "react-router-dom";
-
 import './styles.scss';
 
 
@@ -9,23 +8,19 @@ const HomePage = () => {
 
     return (
 
-       <>
-       <body>
-
-<header className="header-container">
-
+        <section className="homepage">
+    <header className="header-homepage">
 
     <h2 className="header__title">BIENVENUE !</h2>
     <img className="photo" src="./images/jonathan-no-background.png" alt="photo jonathan" />
 
-
 </header>
 
-<main className="main-container">
+<main className="main-homepage">
 
     <div className="title-container">
         <h1 className="title">JONATHAN DEVRED</h1>
-        <h3 className="subtitle">WEB DÉVELOPPEUR</h3>
+        <h3 className="main-subtitle">WEB DÉVELOPPEUR</h3>
     </div>
 
     <div className="navigation-container">
@@ -43,18 +38,24 @@ const HomePage = () => {
             </div>
 
             <div className="link" >
+            <Link className="link-navigation" to="/projets">
                 <img className="svg" src="./images/1.svg" alt="Projets" />
                 <span>MES PROJETS</span>
+            </Link>
             </div>
 
             <div className="link" >
+            <Link className="link-navigation" to="/cv">
                 <img className="svg" src="./images/4.svg" alt="CV" />
                 <span>MON CV</span>
+            </Link>
             </div>
 
             <div className="link" >
-                <img className="svg" src="./images/5.svg" alt="Prestations" />
-                <span>MES PRESTATIONS</span>
+            <Link className="link-navigation" to="/services">
+                <img className="svg" src="./images/5.svg" alt="Services" />
+                <span>MES SERVICES</span>
+            </Link>
             </div>
 
             <div className="link" >
@@ -73,13 +74,8 @@ const HomePage = () => {
         </div>
     </div>
 
-</main>
-
-<footer></footer>
-
-</body>
-       </>
-
+</main>       
+</section>
     )
 }
 
