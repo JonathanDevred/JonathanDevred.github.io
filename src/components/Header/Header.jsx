@@ -1,30 +1,57 @@
-import React, { memo } from 'react';
+import React, { useState, memo } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import "./styles.scss"
-
+import { slide as Menu } from 'react-burger-menu';
+import './styles.scss';
 
 const Header = (props) => {
 
-    return (
-            <section className='header-container'>
+  const [isOpen, setIsOpen] = useState(false);
 
-            <div className='home'>
-            <Link to="/">
-            <img className="svg-home" src="./images/home.svg" alt="A propose" />
-            </Link>
-            </div>
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
-            <h1 className='title'>{props.title}</h1>
+  return (
+    <section className='header-container'>
+      <div className='burger' onClick={toggleMenu}>
+        <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+        <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+        <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+      </div>
+      <h1 className='title'>{props.title}</h1>
 
-
-            </section>
-    )
-
-}
-
-Header.propTypes = {
-    title: PropTypes.string
+    <div>
+      <Menu isOpen={isOpen} right>
+        <Link to='/' className='menu-item'>
+          ACCUEIL
+        </Link>
+        <Link to='/about' className='menu-item'>
+          À PROPOS
+        </Link>
+        <Link to='/projects' className='menu-item'>
+          PROJETS
+        </Link>
+        <Link to='/cv' active={true} className='menu-item'>
+          CV
+        </Link>
+        <Link to='/services' className='menu-item'>
+          SERVICES
+        </Link>
+        <Link to='/medias' className='menu-item'>
+          MÉDIAS
+        </Link>
+        <Link to='/contact' className='menu-item'>
+          CONTACT
+        </Link>
+      </Menu>
+    </div>
+    </section>
+  );
 };
 
-export default memo(Header); 
+Header.propTypes = {
+  title: PropTypes.string,
+};
+
+export default memo(Header);
