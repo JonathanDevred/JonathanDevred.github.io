@@ -30,19 +30,19 @@ const Header = (props) => {
           À PROPOS
         </Link>
         <Link to='/projects' className='menu-item'>
-          PROJETS
+          MES PROJETS
         </Link>
-        <Link to='/cv' active={true} className='menu-item'>
-          CV
+        <Link to='/cv' className='menu-item'>
+          MON CV
         </Link>
         <Link to='/services' className='menu-item'>
-          SERVICES
+          MES SERVICES
         </Link>
-        <Link to='/medias' className='menu-item'>
-          MÉDIAS
+        <Link to='/https://linktr.ee/rvntch' className='menu-item'>
+          MES RÉSEAUX
         </Link>
         <Link to='/contact' className='menu-item'>
-          CONTACT
+          ME CONTACTER
         </Link>
       </Menu>
     </div>
@@ -51,7 +51,7 @@ const Header = (props) => {
 };
 
 Header.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
 };
 
 export default memo(Header);

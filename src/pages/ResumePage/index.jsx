@@ -1,10 +1,13 @@
 import { memo } from "react";
 import Header from "../../components/Header/Header";
 import "./styles.scss"
+import { motion } from "framer-motion";
+import config from "./motion.config";
 
 const ResumePage = () => {
   return (
-    <>
+    <motion.section className="container resume" {...config.containerAnimation}>
+
       <div className="header-regular">
         <Header title="MON CURRICULUM VITAE" />
       </div>
@@ -17,7 +20,7 @@ const ResumePage = () => {
           <img className="cv" src="public/images/cv.png" alt="cv de Jonathan Devred" />
         
       </div>
-    </>
+    </motion.section>
   );
 };
 

@@ -1,11 +1,14 @@
 import React, { useEffect, memo } from "react";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Header from "../../components/Header/Header";
+import { motion } from "framer-motion";
+import config from "./motion.config";
 
 const ContactPage = () => {
 
     return (
-       <section className="page contact-page">
+        <motion.section className="container contact" {...config.containerAnimation}>
+
 
         <div className="header-regular">  
             <Header  title="ME CONTACTER"/>
@@ -26,7 +29,7 @@ const ContactPage = () => {
 
 
         <ContactForm />
-       </section>
+       </motion.section>
     )
 }
 

@@ -1,13 +1,15 @@
 import { memo } from "react";
 import Header from "../../components/Header/Header";
 import "./styles.scss"
+import { motion } from "framer-motion";
+import config from "./motion.config";
 
 const AboutPage = () => {
 
 
     return (
 
-       <section>
+        <motion.section className="container aboutpage" {...config.containerAnimation}>
         <div className="header-regular">
         <Header title="A PROPOS DE MOI"/>
         </div>
@@ -96,7 +98,7 @@ const AboutPage = () => {
 
             </main>
             </div>
-        </section>
+        </motion.section>
 
     )
 }
