@@ -14,13 +14,13 @@ const ProjectsPage = () => {
         <Header title="MES PROJETS" />
        </div>
 
-       <div className="about">
-                <main className="about-main">
+       <div className="general">
+                <main>
 
-                    <section className="about-section">
-                        <h2 className="about-subtitle">Projets terminés :</h2>
+                    <section className="general-section">
+                        <h2 className="general-subtitle">Projets terminés :</h2>
                         
-                        <p className="about-text">
+                        <p className="general-text">
                         IMC calculator
                         </p>
 
@@ -30,10 +30,10 @@ const ProjectsPage = () => {
 
                     </section>
 
-                    <section className="about-section">
-                        <h2 className="about-subtitle">Projets en cours :</h2>
+                    <section className="general-section">
+                        <h2 className="general-subtitle">Projets en cours :</h2>
                         
-                        <p className="about-text">
+                        <p className="general-text">
                         La bibliothèque fantastique de Maggie
                         </p>
 

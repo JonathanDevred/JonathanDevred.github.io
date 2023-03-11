@@ -26,7 +26,7 @@ const Header = (props) => {
         <Link to='/' className='menu-item'>
           ACCUEIL
         </Link>
-        <Link to='/about' className='menu-item'>
+        <Link to='/general' className='menu-item'>
           À PROPOS
         </Link>
         <Link to='/projects' className='menu-item'>
@@ -38,7 +38,7 @@ const Header = (props) => {
         <Link to='/services' className='menu-item'>
           MES SERVICES
         </Link>
-        <Link to='/https://linktr.ee/rvntch' className='menu-item'>
+        <Link to='https://linktr.ee/rvntch' className='menu-item'>
           MES RÉSEAUX
         </Link>
         <Link to='/contact' className='menu-item'>

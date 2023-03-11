@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
+import "./styles.scss"
 
 function ContactForm() {
   const [message, setMessage] = useState('');
-  const [error, setError] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -16,23 +16,24 @@ function ContactForm() {
     window.location.href = mailtoLink;
   };
 
+
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="message">Message :</label>
-      <textarea
+
+    <section className='message-section'>
+    <form  onSubmit={handleSubmit}>
+      <label className='general-subtitle'>Message :</label>
+      <textarea className="message-text"
         id="message"
         value={message}
         onChange={(event) => setMessage(event.target.value)}
         placeholder="Entrez votre message"
         required
-      ></textarea>
+      />
 
-      {error && <div>{error}</div>}
+      <button>Envoyer</button>
 
-      <button type="submit">
-        Envoyer
-      </button>
     </form>
+    </section>
   );
 }
 

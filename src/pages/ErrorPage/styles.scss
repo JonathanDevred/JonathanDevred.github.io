@@ -1,0 +1,26 @@
+.errorpage {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+
+    &title {
+        margin-bottom: 2rem;
+    }
+}
+
+.oops {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.errorlink {
+    font-size: 3rem;
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        color: #ccc;
+    }
+}

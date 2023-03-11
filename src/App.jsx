@@ -5,13 +5,13 @@ Route,
 Routes
 } from "react-router-dom";
 
-import AboutPage from './pages/AboutPage';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import ErrorPage from './pages/ErrorPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ResumePage from './pages/ResumePage';
 import ServicesPage from './pages/ServicesPage';
+import AboutPage from './pages/AboutPage';
 
 function App() {
 
