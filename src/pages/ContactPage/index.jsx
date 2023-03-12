@@ -23,7 +23,7 @@ const ContactPage = () => {
             n'hésitez pas à utiliser le formulaire de contact ci-dessous (une page de courrier électronique s'ouvrira).
           </p>
 
-          <p className="general-text-alt">Vous préférez d'autres  ?</p>
+          <p className="general-text-alt">Vous préférez d'autres   ?</p>
 
           <ul>
             <li className="option">
