@@ -61,7 +61,7 @@ const HomePage = () => {
                 </div>
 
                 <div className="link" >
-                <Link className="link-navigation" to="https://linktr.ee/jdvrd" target="_blank" rel="noopener noreferrer">
+                <Link className="link-navigation" to="https://linktr.ee/rvntch" target="_blank" rel="noopener noreferrer">
                     <img className="svg" src="./images/6.svg" alt="réseaux sociaux" />
                     <span>MES RÉSEAUX</span>
                 </Link>

@@ -26,7 +26,7 @@ const Header = (props) => {
         <Link to='/' className='menu-item'>
           ACCUEIL
         </Link>
-        <Link to='/general' className='menu-item'>
+        <Link to='/about' className='menu-item'>
           À PROPOS
         </Link>
         <Link to='/projects' className='menu-item'>
