@@ -111,3 +111,32 @@ span {
         color: white;
         text-decoration: none;
       }
+
+      @media screen and (max-width: 999px) {
+        .header-homepage {
+          width: 100%;
+          border-right: none;
+          height: auto;
+          float: none;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          flex-direction: column;
+        }
+      
+        .photo {
+        
+          position: static;
+          width: 50%;
+          margin: 2rem auto 0 auto;
+        }
+
+        .main-homepage {
+            float: non;
+            width: 100%;
+            background-image: url("../images/background.png");
+            background-size: cover;
+            height: 150vh;
+        }
+      }
+      
