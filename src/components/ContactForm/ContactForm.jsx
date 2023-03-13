@@ -20,8 +20,8 @@ function ContactForm() {
   return (
 
     <section className='message-section'>
-    <form  onSubmit={handleSubmit}>
-      <label className='general-subtitle'>Message :</label>
+    <form className='contact-form' onSubmit={handleSubmit}>
+      <label className='general-subtitle'>Pour m'écrire un message :</label>
       <textarea className="message-text"
         id="message"
         value={message}
@@ -30,7 +30,7 @@ function ContactForm() {
         required
       />
 
-      <button>Envoyer</button>
+      <button className='submit'>Envoyer</button>
 
     </form>
     </section>

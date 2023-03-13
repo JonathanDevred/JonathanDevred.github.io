@@ -17,7 +17,7 @@ const ProjectsPage = () => {
 
        <div className="general">
                 <main>
-
+                    <p className="subtitle">Vous retrouverez ici les différents projets que j'aie pu mener, personnels ou non : </p>
                     <section className="general-section">
                         <h2 className="general-subtitle">Projets terminés :</h2>
                         
@@ -25,14 +25,14 @@ const ProjectsPage = () => {
                         <label>
                         <a href="../../projects/IMC/index.html">
                         <img className="project-img" src="/images/imc.png" alt="Projet IMC" />
-                        <p className="general-text">Calculateur d'IMC</p>
+                        <p className="link-text">Calculateur d'IMC</p>
                         </a>
                         </label>
 
                         <label>
                         <a href="../../projects/Kultur'Kwizz/index.html">
                         <img className="project-img" src="/images/kultur.png" alt="Projet Kultur'Kwizz" />
-                        <p className="general-text">Kultur'Kwizz</p>
+                        <p className="link-text">Kultur'Kwizz</p>
                         </a>
                         </label>
                         </div>
@@ -42,9 +42,13 @@ const ProjectsPage = () => {
                     <section className="general-section">
                         <h2 className="general-subtitle">Projets en cours :</h2>
                         
-                        <p className="general-text">
-                        La bibliothèque fantastique de Maggie
-                        </p>
+                        <div className="projects-link">
+                        <label>
+                        <p className="link-text">La bibliothèque fantastique de Maggie</p>
+                        
+                        <p>Lien à venir</p>
+                        </label>
+                        </div>
 
                     </section>
 

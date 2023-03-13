@@ -4,6 +4,11 @@
     font-weight: bold;
     display: inline;
     margin-left: 0.5rem;
+    transition: 0.2s;
+
+    &:hover{
+        color: gray;
+    }
 
 }
 
@@ -17,6 +22,7 @@
     font-weight: bold;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    color: gray;
 }
 
 .option {
@@ -27,3 +33,16 @@
         font-style: italic;
     }
 }
+
+.message-container {
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 15px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
